@@ -4,23 +4,24 @@ constexpr int N_ELEMENTS = 100;
 
 int main()
 {
-    int *b = new int[N_ELEMENTS];//N_ELEMENTS-nek kéne lennie
-    std::cout << "1-100 ertekek duplazasa" << std::endl; //nem macskaköröm között van,hiányzik az endline
+    int *b = new int[N_ELEMENTS];//N_ELEMENTS-nek kÃ©ne lennie
+    std::cout << "1-100 ertekek duplazasa" << std::endl; //nem macskakÃ¶rÃ¶m kÃ¶zÃ¶tt van,hiÃ¡nyzik az endline
     for (int i = 0; i < N_ELEMENTS;i++)//NIncs befejezve
     {
         b[i] = i * 2;
     }
-    for (int i = 0; i<N_ELEMENTS; i++)//hiányzik az i felsõ határértéke
+    for (int i = 0; i<N_ELEMENTS; i++)//hiÃ¡nyzik az i felsÅ‘ hatÃ¡rÃ©rtÃ©ke
     {
-        std::cout << "Ertek:" << std::endl; //hiányzik a pontosvesszõ és az endline
+        std::cout << "Ertek:" << std::endl; //hiÃ¡nyzik a pontosvesszÅ‘ Ã©s az endline
     }    
     std::cout << "Atlag szamitasa: " << std::endl;
-    double atlag; //az átlag nem egész kell hogy legyen hanem double
-    for (int i = 0; i < N_ELEMENTS; i++)// az N_ELEMENTS és az i++ közé pontosvesszõ kell
+    double atlag; //az Ã¡tlag nem egÃ©sz kell hogy legyen hanem double
+    for (int i = 0; i < N_ELEMENTS; i++)// az N_ELEMENTS Ã©s az i++ kÃ¶zÃ© pontosvesszÅ‘ kell
     {
-        atlag += b[i]; //hiáyznik a pontosvesszõ
+        atlag += b[i]; //hiÃ¡yznik a pontosvesszÅ‘
     }
     atlag /= N_ELEMENTS;
     std::cout << "Atlag: " << atlag << std::endl;
+    std::cout << "Hello World" << std::endl;
     return 0;
 }
